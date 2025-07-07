@@ -283,8 +283,11 @@
             button.textContent = 'Launching...';
             
             setTimeout(() => {
-                // Redirect to Google
-                window.location.href = 'https://www.google.com';
+                // Open Google in a new tab
+                window.open('https://www.google.com', '_blank');
+                // Reset button state
+                button.style.transform = 'scale(1)';
+                button.textContent = 'Start Browsing Safely';
             }, 500);
         }
 
