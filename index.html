@@ -283,11 +283,8 @@
             button.textContent = 'Launching...';
             
             setTimeout(() => {
-                // In a real implementation, this would redirect to the actual browsing interface
-                // For demo purposes, we'll just show an alert
-                alert('Welcome to your private browsing session! 🎉');
-                button.style.transform = 'scale(1)';
-                button.textContent = 'Start Browsing Safely';
+                // Redirect to Google
+                window.location.href = 'https://www.google.com';
             }, 500);
         }
 
